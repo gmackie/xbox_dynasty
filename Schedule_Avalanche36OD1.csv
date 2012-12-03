@@ -1,0 +1,748 @@
+WeekNum,HomeTeam,AwayTeam,HomeScore,AwayScore,Q1Home,Q1Away,Q2Home,Q2Away,Q3Home,Q3Away,Q4Home,Q4Away,OTHome,OTAway
+"Week 1","Mississippi State","Kent State",35,25,7,0,21,7,7,3,0,15,0,0
+"Week 1",Kentucky,"Air Force",17,31,0,14,0,7,3,10,14,0,0,0
+"Week 1","Notre Dame",SMU,3,36,0,10,0,3,3,7,0,16,0,0
+"Week 1","Texas A&M",Alabama,38,17,7,0,10,0,21,0,0,17,0,0
+"Week 1",LSU,"South Carolina",44,38,10,0,10,14,14,10,10,14,0,0
+"Week 1",Vanderbilt,Tennessee,3,42,0,7,0,14,3,7,0,14,0,0
+"Week 1",Miami,Georgia,21,7,7,0,7,0,7,0,0,7,0,0
+"Week 1",Arkansas,Northwestern,31,34,10,3,7,10,7,14,7,7,0,0
+"Week 1",Cal,Maryland,28,34,7,14,7,10,7,7,7,3,0,0
+"Week 1",Illinois,Pittsburgh,28,49,11,14,10,14,0,0,7,21,0,0
+"Week 2",TCU,"FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Western Kentucky","Bowling Green",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Connecticut,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Houston,UTSA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Duke,Kansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Clemson,"Central Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Akron,Marshall,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Virginia Tech",ECU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Penn State",Temple,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Arkansas State",Nevada,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Oklahoma,"FCS East",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Texas Tech","FCS East",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",FIU,"FCS West",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Virginia,"Florida State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Michigan,Cal,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Georgia,UCF,27,15,0,0,13,7,7,0,7,8,0,0
+"Week 2","Mid Tenn State","Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Western Michigan","FCS East",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","UL Lafayette","FCS East",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Utah State","FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Ohio State","Notre Dame",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Ole Miss",Purdue,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Tennessee,Texas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Miami University",Minnesota,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Washington,Stanford,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Fresno State","Southern Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Eastern Michigan",USF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Rutgers,Syracuse,45,17,7,7,14,0,14,7,10,3,0,0
+"Week 2",Arizona,"FCS East",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","New Mexico State","FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Oklahoma State","FCS West",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","North Carolina","FCS Northwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Memphis,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Utah,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Kent State",Army,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Wyoming,"Florida Atlantic",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Iowa State",Toledo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Illinois,SMU,13,10,3,7,0,0,0,3,10,0,0,0
+"Week 2",Tulane,"Georgia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Washington State",Wisconsin,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",UAB,Troy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Rice,"Wake Forest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Florida,LSU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Baylor,USC,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Northern Illinois",Idaho,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Kansas State","FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Texas State","FCS West",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Colorado,Hawai'i,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","San Diego State","San Jose State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Alabama,Maryland,7,17,0,7,0,3,7,0,0,7,0,0
+"Week 2","South Carolina",Miami,10,16,0,0,3,10,0,0,7,6,0,0
+"Week 2","Boise State","Mississippi State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",UCLA,UTEP,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Navy,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Oregon State","FCS East",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","NC State","FCS West",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",BYU,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","West Virginia","FCS East",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Louisville,"FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","UL Monroe","FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",UNLV,"Louisiana Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Oregon,"Michigan State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Colorado State",Kentucky,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Auburn,"Texas A&M",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2",Arkansas,Indiana,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 2","Arizona State","Boston College",56,21,0,7,21,7,35,0,0,7,0,0
+"Week 3",Idaho,"FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Ole Miss","Boise State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Utah State",Utah,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Marshall,Ohio,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Bowling Green",Indiana,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Virginia Tech","Western Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",UCLA,Akron,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Army,Buffalo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Iowa,"Iowa State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Connecticut,Duke,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Purdue,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",UAB,"FCS Northwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Washington,"FCS West",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Cincinnati,Arkansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","UL Monroe",TCU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Texas Tech","Texas A&M",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Texas State","Air Force",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","San Diego State","FCS Northwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Michigan,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",USC,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Florida State",Wisconsin,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Wyoming,Kentucky,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Northern Illinois","Miami University",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Houston,Tulane,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",UTSA,Arizona,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Temple,Navy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Tennessee,"West Virginia",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Florida Atlantic","FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Troy,"FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Baylor,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Kansas,"FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","New Mexico",UTEP,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Minnesota,"San Jose State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Fresno State",Nebraska,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Memphis,"Mid Tenn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Mississippi State",Auburn,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Michigan State","Arizona State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Stanford,Oregon,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Vanderbilt,"Wake Forest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Southern Miss","Penn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Oklahoma State","New Mexico State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Arkansas State","Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",USF,UMass,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Clemson,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Georgia Tech",BYU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Virginia,"Louisiana Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Alabama,Illinois,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",UCF,"South Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Florida,Louisville,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Central Michigan","NC State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Nevada,"Washington State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","North Carolina","Ohio State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Tulsa,Oklahoma,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Toledo,Missouri,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Texas,"North Texas",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Notre Dame",Pittsburgh,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Rutgers,Cal,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Maryland,LSU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Boston College",Miami,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Syracuse,Georgia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3",Hawai'i,"Oregon State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 3","Colorado State",Colorado,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Kentucky,UNLV,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Indiana,"North Texas",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Michigan State","Eastern Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Oklahoma State",UTSA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Ohio State","Kent State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Minnesota,"North Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Cincinnati,Toledo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Air Force","Mississippi State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Miami University","Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Central Michigan",UMass,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Arkansas,Louisville,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Duke,"Ole Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Virginia Tech",Nebraska,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",LSU,"Boston College",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Georgia,"Texas A&M",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","New Mexico","Fresno State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Kansas,UAB,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Arizona State",UCF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",TCU,Oregon,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Navy,Clemson,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","San Jose State","FCS West",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Cal,"Florida State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Western Michigan","Bowling Green",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Ohio,Idaho,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Connecticut,"UL Monroe",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Georgia Tech","FCS Northwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",USF,"NC State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Northwestern,Vanderbilt,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Texas,BYU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Notre Dame",Rutgers,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",SMU,Michigan,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Miami,Illinois,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","South Carolina",Maryland,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Tennessee,"Iowa State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Wake Forest","Northern Illinois",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Syracuse,Pittsburgh,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","West Virginia","Texas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Troy,Memphis,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Penn State",Army,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Wyoming,"Utah State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Purdue,Colorado,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",UCLA,Iowa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","San Diego State",Hawai'i,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Tulsa,Rice,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Louisiana Tech",Houston,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Washington State","Florida Atlantic",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Boise State","UL Lafayette",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Temple,"FCS Southeast",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Kansas State",Auburn,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",FIU,Missouri,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Buffalo,Baylor,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",UTEP,"New Mexico State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4","Mid Tenn State","Western Kentucky",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Tulane,Marshall,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",USC,Stanford,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 4",Arizona,Nevada,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Colorado,"North Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Wake Forest",Army,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","West Virginia","Penn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Navy,"Notre Dame",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Idaho,Washington,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Purdue,ECU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Oregon,Michigan,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",UTSA,"FCS Northwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Louisiana Tech","FCS Midwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","NC State","Oregon State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Utah,"Washington State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Ohio,"Northern Illinois",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Miami University","Eastern Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Mid Tenn State",Duke,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Pittsburgh,Virginia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Buffalo,"Central Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Bowling Green",Toledo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Rice,Marshall,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",TCU,Missouri,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Cal,"Ohio State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Ole Miss",Nebraska,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","UL Monroe","Western Kentucky",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Miami,Auburn,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Minnesota,Nevada,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Fresno State","San Diego State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Kentucky,"Boise State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Mississippi State","Colorado State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",BYU,"Southern Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Illinois,LSU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Wyoming,Hawai'i,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Akron,"Western Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Tulane,UAB,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Arizona,"Arkansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Michigan State","UL Lafayette",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Texas,UCLA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Maryland,Rutgers,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Arizona State",Wisconsin,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Tulsa,"North Texas",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Indiana,"FCS West",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",UCF,"Texas A&M",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Air Force",UNLV,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Oklahoma State",Tennessee,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",UMass,"Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Texas Tech","Kansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",FIU,Louisville,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Georgia,Vanderbilt,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Baylor,"Utah State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Texas State",USF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","San Jose State",Kansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Iowa State","FCS Northwest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","New Mexico State","New Mexico",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Florida State",SMU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Georgia Tech","Virginia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","Boston College",Alabama,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5","South Carolina",Syracuse,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Stanford,Iowa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 5",Connecticut,Arkansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","North Carolina","Wake Forest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Duke,Army,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Nebraska,"Florida Atlantic",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Kansas State",UTSA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",ECU,"West Virginia",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Missouri,Indiana,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Oregon State",Clemson,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Mid Tenn State","North Texas",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Auburn,"Boston College",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Nevada,UCLA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Hawai'i,"New Mexico",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Toledo,Akron,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Florida State",Pittsburgh,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Western Kentucky",FIU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Miami,LSU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Washington State",USC,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Eastern Michigan",Ohio,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Central Michigan","Miami University",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Florida,Northwestern,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Texas Tech",Kansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",UAB,Rice,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Marshall,UTEP,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Washington,Colorado,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","NC State","Oklahoma State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Maryland,SMU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Rutgers,Texas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Colorado State",Tulsa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Temple,TCU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Georgia,Tennessee,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Cal,"Notre Dame",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Iowa State",Oklahoma,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Louisiana Tech",Cincinnati,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Navy,"Texas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Virginia,"Arizona State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Purdue,"Virginia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Arizona,"Penn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Stanford,Minnesota,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Fresno State",Kentucky,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Wyoming,"Air Force",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",UNLV,"Mississippi State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Northern Illinois","Bowling Green",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Arkansas,Alabama,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Wisconsin,Michigan,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Michigan State","Ohio State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","UL Monroe",Troy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Illinois,UCF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Iowa,Utah,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Kent State","San Diego State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Ball State",Buffalo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6","Western Michigan",UMass,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",Memphis,Tulane,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 6",BYU,Houston,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Army,"Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Air Force",Navy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Kentucky,"Mississippi State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","New Mexico State","Mid Tenn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Cincinnati,"Miami University",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Troy,"Florida Atlantic",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Penn State",Washington,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Ohio,"Central Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Baylor,Vanderbilt,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Nebraska,"NC State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Clemson,Duke,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Akron,"Northern Illinois",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Bowling Green","Eastern Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Rice,"Southern Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Northwestern,USF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Western Kentucky","Arkansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Stanford,Utah,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Washington State",Iowa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Utah State","Iowa State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Syracuse,Maryland,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Hawai'i,UNLV,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Missouri,"Oklahoma State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Nevada,Idaho,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Tennessee,Florida,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Pittsburgh,Michigan,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Oregon State",Colorado,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","UL Lafayette","Louisiana Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Michigan State","Notre Dame",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",FIU,"North Texas",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Texas A&M","Boston College",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Oregon,Minnesota,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Kent State",Wyoming,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","San Diego State","Boise State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","New Mexico","Colorado State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Kansas State",TCU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",UTSA,BYU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Auburn,Arkansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",UCF,Virginia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Wisconsin,Rutgers,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Ohio State",SMU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Arizona State","Florida State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Wake Forest","Georgia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Virginia Tech","Ole Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Alabama,Miami,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",USC,Arizona,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Buffalo,"Western Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",UMass,Toledo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Tulane,ECU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Louisville,Connecticut,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7",Oklahoma,"Texas Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 7","Fresno State","San Jose State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Florida State","Utah State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Wisconsin,"Bowling Green",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Minnesota,Northwestern,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Oklahoma,Texas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Pittsburgh,"Michigan State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Western Kentucky","UL Lafayette",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Illinois,"Boston College",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",USC,Oregon,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Boise State","New Mexico",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Memphis,UTEP,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Tulane,"Southern Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",SMU,Syracuse,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","North Carolina",Nebraska,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Troy,FIU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",UCF,Alabama,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","San Diego State",Kentucky,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Oklahoma State",Kansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Tennessee,TCU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Cincinnati,Florida,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Louisville,Temple,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Akron,Connecticut,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Navy,"San Jose State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Stanford,Army,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Notre Dame",Purdue,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Ole Miss","NC State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Mississippi State",Wyoming,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Toledo,"Northern Illinois",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",UAB,Houston,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Iowa State","Texas Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Virginia,Cal,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Georgia Tech",Clemson,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Washington,Utah,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Penn State",UCLA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Buffalo,"Miami University",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",UMass,Ohio,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Rice,ECU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",UNLV,Nevada,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Arkansas State","Kansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Central Michigan","UL Monroe",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Michigan,"Arizona State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Wake Forest",Duke,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Colorado,"Virginia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","North Texas","Florida Atlantic",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Texas A&M","South Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Maryland,Georgia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Iowa,Arizona,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Kent State","Colorado State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8","Western Michigan","Eastern Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Marshall,Tulsa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Baylor,Missouri,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",Vanderbilt,"West Virginia",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 8",BYU,Hawai'i,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","UL Lafayette","North Texas",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Washington State",Minnesota,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Arizona State","Ohio State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Wake Forest",Colorado,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","NC State","Virginia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Clemson,"Ole Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Troy,"Arkansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","South Carolina",Illinois,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Georgia,"Boston College",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Penn State",USC,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Air Force","Kent State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Ball State",Akron,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Tulsa,Tulane,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Kentucky,"New Mexico",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Northern Illinois","Western Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Eastern Michigan",Toledo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Ohio,Buffalo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Cincinnati,Indiana,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Connecticut,Florida,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Utah,Louisville,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",SMU,Pittsburgh,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Rutgers,Virginia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Cal,Miami,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Michigan,"Michigan State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","North Carolina",Duke,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","San Jose State","Utah State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",UTSA,"Louisiana Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Western Kentucky","Florida Atlantic",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",LSU,UCF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Iowa,Oregon,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",UNLV,"Fresno State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Colorado State",Hawai'i,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Southern Miss",Houston,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",TCU,Vanderbilt,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Baylor,"Iowa State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Army,FIU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","New Mexico State","Texas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Texas A&M",Syracuse,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Maryland,Auburn,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Missouri,"West Virginia",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Oklahoma State","Texas Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Mississippi State","San Diego State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",UTEP,ECU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Tennessee,Alabama,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Wisconsin,"Notre Dame",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Purdue,"Oregon State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Nebraska,"Georgia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Nevada,Washington,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Miami University",UMass,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Memphis,Rice,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",USF,Arkansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Northwestern,Temple,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Texas,"Kansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9",Kansas,Oklahoma,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Boise State",BYU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 9","Florida State",Stanford,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Navy,"Western Kentucky",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Northwestern,Iowa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Tulane,"Washington State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Florida State",Rutgers,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Georgia Tech","Oregon State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","NC State","North Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","UL Lafayette",Troy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",UCLA,Arizona,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Wyoming,UNLV,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Fresno State","Colorado State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Akron,"Miami University",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",UTEP,Rice,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Southern Miss",Tulsa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Kansas State","Iowa State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Duke,Nebraska,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","North Texas","Arkansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",UAB,Memphis,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Oklahoma,Missouri,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Vanderbilt,"Texas Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Florida Atlantic","Mid Tenn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Minnesota,USC,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Oregon,Nevada,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Toledo,"Central Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Indiana,Temple,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","West Virginia",TCU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Texas,"Oklahoma State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",BYU,"San Diego State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","South Carolina",Tennessee,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Texas A&M",Arkansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Florida,Kentucky,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",SMU,Virginia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Colorado,Clemson,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","San Jose State","Texas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Mississippi State",Cincinnati,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Purdue,"Eastern Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","New Mexico State","Utah State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",UTSA,Idaho,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",FIU,"UL Monroe",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Syracuse,Miami,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",LSU,Auburn,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Utah,"Penn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Boise State","Kent State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Bowling Green",Ohio,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Houston,ECU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Louisville,USF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Kansas,Baylor,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Alabama,"Ole Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Cal,Wisconsin,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Ohio State",Pittsburgh,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Arizona State","Notre Dame",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",Hawai'i,"Air Force",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Western Michigan","Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10",UCF,Marshall,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 10","Boston College","Virginia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Kansas State",Oklahoma,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Miami University","Bowling Green",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Pittsburgh,Louisville,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Vanderbilt,UMass,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Michigan,"Florida State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Duke,"Georgia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Ole Miss","Wake Forest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","NC State",Colorado,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Texas State",Idaho,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Arkansas State",FIU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Eastern Michigan",Buffalo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Central Michigan","Western Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",UAB,UTEP,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",ECU,Tulsa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Oregon State","North Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Virginia Tech",Clemson,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","San Jose State",UTSA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Louisiana Tech","Utah State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","UL Lafayette","Mid Tenn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Syracuse,Auburn,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Maryland,"Texas A&M",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Cincinnati,Northwestern,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Texas,"West Virginia",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Oregon,"Washington State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","New Mexico","Mississippi State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Colorado State",Wyoming,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Hawai'i,"Boise State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Marshall,Houston,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Connecticut,Indiana,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Rice,Navy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Army,"Air Force",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Notre Dame",Stanford,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Virginia,"Michigan State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Nebraska,Purdue,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Wisconsin,SMU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Boston College","South Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Illinois,Georgia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",UCLA,Utah,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Kent State","Fresno State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Ball State",Toledo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Ohio,Akron,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",TCU,Baylor,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",USF,Florida,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Missouri,Kansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Iowa State","Oklahoma State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Western Kentucky",Kentucky,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",UNLV,"Texas Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",USC,BYU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Ohio State",Rutgers,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Florida Atlantic","UL Monroe",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Alabama,LSU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Iowa,Nevada,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11",Washington,Arizona,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 11","Southern Miss",Memphis,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Arkansas State","UL Monroe",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Tulsa,Houston,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Marshall,UAB,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Virginia Tech","Wake Forest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Clemson,"NC State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Troy,"Western Kentucky",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Miami,UCF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Syracuse,LSU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Utah,USC,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Colorado State","Boise State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Eastern Michigan","Central Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Akron,UMass,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Bowling Green",Buffalo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Texas,"Iowa State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Michigan State",Cal,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Arizona State",Pittsburgh,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Florida State","Ohio State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",UTSA,"New Mexico State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",UCLA,Stanford,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Wyoming,"New Mexico",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",ECU,Memphis,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",BYU,"Washington State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Army,Rice,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Virginia,Wisconsin,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","North Carolina","Georgia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Colorado,"Ole Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",FIU,"Mid Tenn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Minnesota,"Penn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Temple,Florida,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Kansas,Tennessee,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Oklahoma State",Baylor,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","West Virginia","Kansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Navy,"Western Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Rutgers,Michigan,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Nebraska,"Oregon State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Duke,Purdue,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Texas State","Louisiana Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Maryland,Illinois,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Arizona,Oregon,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",UNLV,"San Diego State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",UTEP,"Southern Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Louisville,Cincinnati,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Texas Tech",Missouri,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Kentucky,"South Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Georgia,Auburn,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Utah State",Idaho,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Florida Atlantic","UL Lafayette",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Washington,Iowa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Air Force","Fresno State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12","Northern Illinois","Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Northwestern,Connecticut,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Indiana,USF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 12",Oklahoma,Vanderbilt,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Memphis,Houston,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","North Texas","Western Kentucky",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Florida Atlantic",FIU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Michigan,Iowa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Arkansas,"Ole Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Louisiana Tech","New Mexico State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Air Force","Colorado State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Toledo,Ohio,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","West Virginia",Oklahoma,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Texas Tech",Texas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Temple,Cincinnati,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Florida,Indiana,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","New Mexico",UNLV,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",UMass,"Bowling Green",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Tulsa,UTEP,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Southern Miss",Marshall,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Baylor,Tennessee,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Tulane,BYU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Notre Dame",Virginia,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Rutgers,"Arizona State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Illinois,"Texas A&M",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Boston College",Cal,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",SMU,"Michigan State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","UL Lafayette","UL Monroe",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Mid Tenn State","Arkansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Auburn,UCF,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Nevada,"Penn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Arizona,"Washington State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Oregon,Washington,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Hawai'i,"Kent State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Ball State","Eastern Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Buffalo,Akron,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Northwestern,Louisville,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Kansas,TCU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Mississippi State",Troy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Wisconsin,"Texas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Oregon State",Duke,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Clemson,"Wake Forest",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Idaho,"San Jose State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Utah,Minnesota,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","San Diego State",Wyoming,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Boise State","Fresno State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Central Michigan","Northern Illinois",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",ECU,UAB,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",USF,Connecticut,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Georgia Tech",Purdue,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Utah State",UTSA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Alabama,Syracuse,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Georgia,"South Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Missouri,Vanderbilt,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13","Kansas State","Oklahoma State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",USC,UCLA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 13",Miami,"Florida State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Nevada,"Colorado State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Temple,Connecticut,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Iowa,Nebraska,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","San Diego State","New Mexico",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Colorado,Utah,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Miami,"Arizona State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Illinois,Northwestern,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Ohio State",Michigan,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Western Kentucky",Army,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Michigan State",Wisconsin,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Pittsburgh,Rutgers,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Idaho,"New Mexico State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",UCF,Syracuse,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Minnesota,UCLA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",UNLV,"Kent State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Fresno State",Hawai'i,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Northern Illinois","Eastern Michigan",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Central Michigan","Ball State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",UTEP,Tulane,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Memphis,Tulsa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Indiana,Louisville,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",USF,Cincinnati,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Vanderbilt,"Kansas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Iowa State",Kansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Boston College",Maryland,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",UMass,Buffalo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Southern Miss",UAB,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","West Virginia",Baylor,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Texas State",UTSA,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Oklahoma,Wyoming,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Virginia,"Virginia Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Oregon State",Oregon,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Georgia,Florida,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","UL Monroe","North Texas",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Auburn,Alabama,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Western Michigan",Toledo,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",ECU,Marshall,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",LSU,"Ole Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Cal,SMU,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Purdue,"North Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Louisiana Tech","San Jose State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Mid Tenn State",Troy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Arkansas State","UL Lafayette",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Boise State","Air Force",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Miami University",Ohio,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Houston,Rice,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Texas A&M",Missouri,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",Clemson,"South Carolina",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",USC,Navy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Wake Forest","NC State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Penn State",Stanford,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Bowling Green",Akron,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14",TCU,Texas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 14","Washington State",Washington,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15","Arkansas State","Florida Atlantic",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Idaho,"Louisiana Tech",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Indiana,Northwestern,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Florida,Arkansas,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15","New Mexico State","San Jose State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Connecticut,Cincinnati,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Houston,UTEP,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Army,Navy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15","Utah State","Texas State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15","North Texas",Troy,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15","UL Monroe","Mid Tenn State",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Rice,Tulane,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",UAB,Tulsa,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",FIU,"UL Lafayette",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Marshall,Memphis,0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",ECU,"Southern Miss",0,0,0,0,0,0,0,0,0,0,0,0
+"Week 15",Temple,USF,0,0,0,0,0,0,0,0,0,0,0,0
