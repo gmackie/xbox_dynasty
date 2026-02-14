@@ -37,59 +37,211 @@ FIELD_TYPE_NAMES = {
     FIELD_FLOAT: "Float",
 }
 
-# Human-readable names for common PLAY table fields.
-# Verified across 7,411 unique-name players with zero mismatches.
-FIELD_NAMES = {
-    # Player identity
-    "ANFP": "FirstName",
-    "ANLP": "LastName",
-    "TGWP": "TeamId",
-    # Ratings
-    "RVOP": "Overall",
-    "DPSP": "Speed",
-    "RTSP": "Strength",
-    "IGAP": "Agility",
-    "CCAP": "Acceleration",
-    "PMJP": "Jumping",
-    "RWAP": "Awareness",
-    "ATSP": "Stamina",
-    "JNIP": "Injury",
-    "KTBP": "BreakTackle",
-    "KRTP": "Trucking",
-    "VSEP": "Elusiveness",
-    "RASP": "StiffArm",
-    "VMSP": "SpinMove",
-    "VMJP": "JukeMove",
-    "RACP": "Carrying",
-    "VCBP": "BallCarrierVision",
-    "KBPP": "PassBlock",
-    "KBRP": "RunBlock",
-    "SBPP": "Catching",
-    "FBPP": "SpectacularCatch",
-    "WFBP": "CatchInTraffic",
-    "SBRP": "RouteRunning",
-    "HTCP": "Release",
-    "TCPS": "Tackle",
-    "FART": "HitPower",
-    "RTRP": "Pursuit",
-    "SLER": "PlayRecognition",
-    "KATP": "PowerMoves",
-    "TIHP": "FinesseMoves",
-    "SRPP": "BlockShedding",
-    "CRPP": "ManCoverage",
-    "VMPP": "ZoneCoverage",
-    "VMFP": "Press",
-    "HSBP": "ThrowPower",
-    "VCMP": "ThrowAccuracy",
-    "VCZP": "KickPower",
-    "SRYP": "KickAccuracy",
-    # Coach identity
-    "MNFC": "FirstName",
-    "MNLC": "LastName",
-    "ANLC": "TeamPosition",
-    # Conference/Division
-    "MANC": "Name",
+# Per-table field name mappings. The same 4-char codes can have DIFFERENT
+# meanings across tables (e.g. HTCP = "Release" in PLAY but "Catching" in RCPT).
+# Verified by cross-referencing TDB dumps against game-exported CSVs.
+TABLE_FIELD_NAMES = {
+    # PLAY table - verified across 7,411 unique-name players, zero mismatches
+    "PLAY": {
+        "ANFP": "FirstName", "ANLP": "LastName", "TGWP": "TeamId",
+        "RVOP": "Overall", "DPSP": "Speed", "RTSP": "Strength",
+        "IGAP": "Agility", "CCAP": "Acceleration", "PMJP": "Jumping",
+        "RWAP": "Awareness", "ATSP": "Stamina", "JNIP": "Injury",
+        "KTBP": "BreakTackle", "KRTP": "Trucking", "VSEP": "Elusiveness",
+        "RASP": "StiffArm", "VMSP": "SpinMove", "VMJP": "JukeMove",
+        "RACP": "Carrying", "VCBP": "BallCarrierVision",
+        "KBPP": "PassBlock", "KBRP": "RunBlock",
+        "SBPP": "Catching", "FBPP": "SpectacularCatch",
+        "WFBP": "CatchInTraffic", "SBRP": "RouteRunning",
+        "HTCP": "Release", "TCPS": "Tackle", "FART": "HitPower",
+        "RTRP": "Pursuit", "SLER": "PlayRecognition",
+        "KATP": "PowerMoves", "TIHP": "FinesseMoves",
+        "SRPP": "BlockShedding", "CRPP": "ManCoverage",
+        "VMPP": "ZoneCoverage", "VMFP": "Press",
+        "HSBP": "ThrowPower", "VCMP": "ThrowAccuracy",
+        "VCZP": "KickPower", "SRYP": "KickAccuracy",
+        "SOPP": "Position",
+    },
+    # RCPT table - verified across 2,572 unique-name recruits
+    # NOTE: 15 field codes have DIFFERENT meanings vs PLAY table
+    "RCPT": {
+        "ANFP": "FirstName", "ANLP": "LastName",
+        "ISRP": "RecordIndex", "BCCR": "Caliber", "KRCR": "Rank",
+        "PGPR": "Position", "TGHP": "Height", "TGWP": "Weight",
+        "TATS": "HomeState",
+        "DPSP": "Speed", "RTSP": "Strength", "IGAP": "Agility",
+        "CCAP": "Acceleration", "PMJP": "Jumping", "ATSP": "Stamina",
+        "JNIP": "Injury",
+        "KTBP": "BreakTackle", "KRTP": "Trucking", "VSEP": "Elusiveness",
+        "RASP": "StiffArm", "VMSP": "SpinMove", "VMJP": "JukeMove",
+        "RACP": "Carrying", "VCBP": "BallCarrierVision",
+        "KBPP": "PassBlock", "KBRP": "RunBlock", "LBIP": "ImpactBlocking",
+        "HTCP": "Catching", "TCPS": "SpectacularCatch",
+        "FART": "CatchInTraffic", "RTRP": "RouteRunning", "SLER": "Release",
+        "KATP": "Tackle", "TIHP": "HitPower", "SRPP": "Pursuit",
+        "CRPP": "PlayRecognition",
+        "VMPP": "PowerMoves", "VMFP": "FinesseMoves", "HSBP": "BlockShedding",
+        "VCMP": "ManCoverage", "VCZP": "ZoneCoverage", "SRYP": "Press",
+        "PHTP": "ThrowPower", "AHTP": "ThrowAccuracy",
+        "RPKP": "KickPower", "CAKP": "KickAccuracy",
+        "RVOP": "Overall", "VOCR": "Potential", "RWAP": "Awareness",
+        "EOPP": "ScoutedOverall", "TRKP": "BaseOverall",
+        "EHGP": "HomeTownId", "DHCR": "HomeTownHash",
+        "MCCR": "ReducedSchoolsFlag", "GTSP": "RecruitingStage",
+    },
+    # TEAM table - 128 teams, key fields
+    "TEAM": {
+        "ANDT": "TeamName", "ANLT": "LocationName", "ANMT": "Mascot",
+        "ANST": "Abbreviation", "TASC": "AsciiCode",
+        "DIGT": "TeamId", "DIGC": "ConferenceId", "DIGD": "DivisionId",
+        "DIGS": "StadiumId", "DIGL": "LeagueLevel",
+        "WHCT": "AllTimeWins", "LHCT": "AllTimeLosses", "THCT": "AllTimeTies",
+        "NYCN": "NatChampCount",
+        "WSPT": "SeasonWins", "LSPT": "SeasonLosses",
+        "APCT": "APPollRank", "FPCT": "CoachesPollRank",
+        "WCRC": "ConfWins", "LCRC": "ConfLosses",
+        "SCPT": "ConfStanding", "SDPT": "DivStanding",
+        "VORT": "OverallRating", "RFTT": "RecruitingPrestige",
+        "WOBC": "BowlWins", "LOBC": "BowlLosses",
+    },
+    # COCH table - coaches (HC/OC/DC)
+    "COCH": {
+        "MNFC": "FirstName", "MNLC": "LastName", "ANLC": "CoachTitle",
+        "DICC": "CoachId", "DIGT": "TeamId", "SPOC": "StaffPosition",
+        "ATDC": "DefenseCoaching", "ATOC": "OffenseCoaching",
+        "NWTC": "CareerWins", "LTOC": "CareerLosses",
+        "WTTC": "TeamWins", "LTTC": "TeamLosses",
+        "TARC": "OverallRating",
+    },
+    # SCHD table - verified via 10 game score cross-references
+    "SCHD": {
+        "CSHG": "HomeScore", "CSAG": "AwayScore",
+        "GTHG": "HomeTeamId", "GTAG": "AwayTeamId",
+        "TWES": "WeekNum", "TADG": "DayOfWeek",
+        "DOTG": "GameTime", "ATSG": "GameStatus",
+        "ISES": "SeasonType", "RYES": "DynastyYear",
+    },
+    # STST/TSSE - team stats, verified via additive identities & opponent swaps
+    "STST": {
+        "DIGT": "TeamId",
+        "post": "PassingYards", "apst": "PassingAttempts",
+        "cpst": "PassingCompletions",
+        "rost": "RushingYards", "arst": "RushingAttempts",
+        "yost": "TotalOffensiveYards",
+        "ytst": "TotalReturnYards", "rkst": "KickReturnYards",
+        "rpst": "PuntReturnYards", "yTst": "TotalAllPurposeYards",
+        "yPst": "PenaltyYards",
+        "ipst": "InterceptionsThrown", "lfst": "FumblesLost",
+        "agst": "TurnoversCommitted",
+        "iDst": "InterceptionsByDefense", "rfst": "FumblesRecovered",
+        "atst": "TurnoversForced",
+        "ksst": "SacksMade", "asst": "SacksAllowed",
+        "d1st": "FirstDowns", "d3st": "ThirdDownAttempts",
+        "c3st": "ThirdDownConversions",
+        "tPst": "PassingTouchdowns",
+        "a2st": "TwoPointAttempts", "c2st": "TwoPointConversions",
+    },
+    "TSSE": {
+        "DIGT": "TeamId",
+        "post": "PassingYards", "apst": "PassingAttempts",
+        "rost": "RushingYards", "arst": "RushingAttempts",
+        "yost": "TotalOffensiveYards",
+        "ytst": "TotalReturnYards", "yTst": "TotalAllPurposeYards",
+        "yPst": "PenaltyYards",
+        "ipst": "InterceptionsThrown", "lfst": "FumblesLost",
+        "agst": "TurnoversCommitted",
+        "iDst": "InterceptionsByDefense", "rfst": "FumblesRecovered",
+        "atst": "TurnoversForced",
+        "ksst": "SacksMade", "asst": "SacksAllowed",
+        "d1st": "FirstDowns",
+        "tPst": "PassingTouchdowns",
+        "pdst": "OppPassingYards", "ydst": "OppRushingYards",
+    },
+    # SOFF - player offensive season stats
+    "SOFF": {
+        "DIGP": "PlayerId",
+        "taag": "PassAttempts", "mcag": "PassCompletions",
+        "ayag": "PassYards", "Nlag": "PassLong",
+        "dtag": "PassTouchdowns", "niag": "Interceptions",
+        "asag": "SacksTaken",
+        "taug": "RushAttempts", "ayug": "RushYards", "Nlug": "RushLong",
+        "dtug": "RushTouchdowns",
+        "accg": "Receptions", "aycg": "RecYards", "Lrcg": "RecLong",
+        "dtcg": "RecTouchdowns",
+    },
+    # SDEF - player defensive season stats
+    "SDEF": {
+        "DIGP": "PlayerId",
+        "thdg": "Tackles", "atdg": "TacklesForLoss",
+        "ltdg": "Sacks", "dpdg": "PassDeflections",
+        "fflg": "ForcedFumbles", "rflg": "FumbleRecoveries",
+        "nisg": "Interceptions", "kslg": "HalfSacks",
+        "Rlsg": "IntReturnYards", "yisg": "IntReturnLong",
+    },
+    # SKIC - kicker/punter season stats
+    # Verified: bakg+cakg+dakg+eakg==afkg (100%), bmkg+cmkg+dmkg+emkg==mfkg (100%)
+    "SKIC": {
+        "DIGP": "PlayerId",
+        "afkg": "FGAttempts", "mfkg": "FGMade", "Lfkg": "FGLong",
+        "aekg": "XPAttempts", "mekg": "XPMade",
+        "bakg": "FGAtt_20_29", "bmkg": "FGMade_20_29",
+        "cakg": "FGAtt_30_39", "cmkg": "FGMade_30_39",
+        "dakg": "FGAtt_40_49", "dmkg": "FGMade_40_49",
+        "eakg": "FGAtt_50Plus", "emkg": "FGMade_50Plus",
+        "tapg": "TotalPunts", "aypg": "TotalPuntYards",
+        "ynpg": "NetPuntYards", "Nlpg": "PuntLong",
+        "knkg": "Kickoffs", "tppg": "PuntTouchbacks",
+        "btkg": "KickoffTouchbacks",
+    },
+    # CONF table
+    "CONF": {
+        "MANC": "Name", "DIGC": "ConferenceId", "DIGL": "LeagueLevel",
+    },
+    # DIVI table
+    "DIVI": {
+        "MAND": "FullName", "MNDS": "ShortName",
+        "DIGC": "ConferenceId", "DIGD": "DivisionId",
+    },
+    # STAD table
+    "STAD": {
+        "MANS": "StadiumName", "NNTS": "Nickname",
+        "TICS": "City", "DIGS": "StadiumId",
+        "PACS": "Capacity", "TOIS": "IsIndoor",
+    },
+    # BOWL table
+    "BOWL": {
+        "EMNB": "BowlName", "DIGS": "StadiumId",
+        "NWES": "WeekNum",
+    },
+    # INJY table
+    "INJY": {
+        "DIGP": "PlayerId", "DIGT": "TeamId",
+        "LJNI": "Duration", "TJNI": "InjuryType",
+    },
+    # HEIS table
+    "HEIS": {
+        "DIGP": "PlayerId", "PACP": "HesmanPoints",
+        "KRPH": "CandidateRank",
+    },
+    # SEAI table - dynasty state
+    "SEAI": {
+        "RYES": "DynastyYear", "NWES": "CurrentWeek",
+        "TWES": "WeekType", "WOES": "TotalWeeks",
+    },
+    # CONT table - coach contracts
+    "CONT": {
+        "DICC": "CoachId", "DIGT": "TeamId", "SPOC": "StaffPosition",
+        "RYCC": "YearsRemaining",
+    },
+    # CITY table
+    "CITY": {
+        "MNYC": "CityName", "TSYC": "StateName",
+        "POPC": "Population", "DIYC": "CityIndex",
+    },
 }
+
+# Legacy flat lookup for backward compatibility (PLAY table defaults)
+FIELD_NAMES = TABLE_FIELD_NAMES["PLAY"]
 
 
 def extract_bits(record_bytes, bit_offset, bit_width):
@@ -330,7 +482,8 @@ def format_schema(table_info):
     return "\n".join(lines)
 
 
-def records_to_csv(records, fields, output=None, friendly_names=False):
+def records_to_csv(records, fields, output=None, friendly_names=False,
+                   table_name=None):
     """Write records as CSV. Returns string if output is None."""
     if not records:
         return ""
@@ -340,8 +493,9 @@ def records_to_csv(records, fields, output=None, friendly_names=False):
     raw_names = [f["name"] for f in sorted_fields]
 
     if friendly_names:
-        # Map raw codes to friendly names where available
-        header_names = [FIELD_NAMES.get(n, n) for n in raw_names]
+        # Use per-table mapping if available, fall back to PLAY defaults
+        name_map = TABLE_FIELD_NAMES.get(table_name, FIELD_NAMES) if table_name else FIELD_NAMES
+        header_names = [name_map.get(n, n) for n in raw_names]
     else:
         header_names = raw_names
 
@@ -445,15 +599,16 @@ def cmd_dump(args):
 
     records = read_records(data, table_info)
     use_friendly = not args.raw
+    tname = args.table.upper()
     if args.output:
         with open(args.output, "w", newline="") as f:
             records_to_csv(records, table_info["fields"], f,
-                           friendly_names=use_friendly)
+                           friendly_names=use_friendly, table_name=tname)
         print(f"Wrote {len(records)} records to {args.output}", file=sys.stderr)
     else:
         sys.stdout.write(
             records_to_csv(records, table_info["fields"],
-                           friendly_names=use_friendly)
+                           friendly_names=use_friendly, table_name=tname)
         )
 
 
@@ -485,7 +640,7 @@ def cmd_export(args):
             fpath = os.path.join(outdir, fname)
             with open(fpath, "w", newline="") as f:
                 records_to_csv(records, t["fields"], f,
-                               friendly_names=use_friendly)
+                               friendly_names=use_friendly, table_name=name)
             total_files += 1
 
     print(f"Exported {total_files} tables to {outdir}/", file=sys.stderr)
@@ -592,11 +747,12 @@ def cmd_diff(args):
                 parts.append(str(v))
         return " | ".join(parts) if parts else f"(record)"
 
+    name_map = TABLE_FIELD_NAMES.get(target, FIELD_NAMES)
     for rec, diffs in changed:
         label = rec_label(rec)
         print(f"\n  ~ {label}")
         for fn, (v1, v2) in sorted(diffs.items()):
-            fn_display = FIELD_NAMES.get(fn, fn)
+            fn_display = name_map.get(fn, fn)
             print(f"      {fn_display}: {v1} -> {v2}")
 
     for rec in added:
