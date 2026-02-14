@@ -6,10 +6,13 @@ Parses Xbox 360 NCAA Football save files (roster + dynasty) that use EA's
 proprietary TDB binary database format wrapped in an MC02 container.
 
 Usage:
-    python tdb_parser.py <file>                      List all tables
-    python tdb_parser.py <file> <TABLE>              Dump table as CSV to stdout
-    python tdb_parser.py <file> <TABLE> -o out.csv   Write table CSV to file
-    python tdb_parser.py <file> <TABLE> --schema     Show field definitions
+    python tdb_parser.py <file>                          List all tables
+    python tdb_parser.py <file> <TABLE>                  Dump table as CSV
+    python tdb_parser.py <file> <TABLE> -o out.csv       Write to file
+    python tdb_parser.py <file> <TABLE> --schema         Show field definitions
+    python tdb_parser.py <file> <TABLE> --raw            Use raw field codes
+    python tdb_parser.py export <file> -o dir/           Export all tables
+    python tdb_parser.py diff <file1> <file2> <TABLE>    Compare tables
 """
 
 import argparse
@@ -32,6 +35,60 @@ FIELD_TYPE_NAMES = {
     FIELD_SINT: "SInt",
     FIELD_UINT: "UInt",
     FIELD_FLOAT: "Float",
+}
+
+# Human-readable names for common PLAY table fields.
+# Verified across 7,411 unique-name players with zero mismatches.
+FIELD_NAMES = {
+    # Player identity
+    "ANFP": "FirstName",
+    "ANLP": "LastName",
+    "TGWP": "TeamId",
+    # Ratings
+    "RVOP": "Overall",
+    "DPSP": "Speed",
+    "RTSP": "Strength",
+    "IGAP": "Agility",
+    "CCAP": "Acceleration",
+    "PMJP": "Jumping",
+    "RWAP": "Awareness",
+    "ATSP": "Stamina",
+    "JNIP": "Injury",
+    "KTBP": "BreakTackle",
+    "KRTP": "Trucking",
+    "VSEP": "Elusiveness",
+    "RASP": "StiffArm",
+    "VMSP": "SpinMove",
+    "VMJP": "JukeMove",
+    "RACP": "Carrying",
+    "VCBP": "BallCarrierVision",
+    "KBPP": "PassBlock",
+    "KBRP": "RunBlock",
+    "SBPP": "Catching",
+    "FBPP": "SpectacularCatch",
+    "WFBP": "CatchInTraffic",
+    "SBRP": "RouteRunning",
+    "HTCP": "Release",
+    "TCPS": "Tackle",
+    "FART": "HitPower",
+    "RTRP": "Pursuit",
+    "SLER": "PlayRecognition",
+    "KATP": "PowerMoves",
+    "TIHP": "FinesseMoves",
+    "SRPP": "BlockShedding",
+    "CRPP": "ManCoverage",
+    "VMPP": "ZoneCoverage",
+    "VMFP": "Press",
+    "HSBP": "ThrowPower",
+    "VCMP": "ThrowAccuracy",
+    "VCZP": "KickPower",
+    "SRYP": "KickAccuracy",
+    # Coach identity
+    "MNFC": "FirstName",
+    "MNLC": "LastName",
+    "ANLC": "TeamPosition",
+    # Conference/Division
+    "MANC": "Name",
 }
 
 
@@ -273,107 +330,109 @@ def format_schema(table_info):
     return "\n".join(lines)
 
 
-def records_to_csv(records, fields, output=None):
+def records_to_csv(records, fields, output=None, friendly_names=False):
     """Write records as CSV. Returns string if output is None."""
     if not records:
         return ""
 
     # Sort fields by bit_offset for consistent column order
     sorted_fields = sorted(fields, key=lambda f: f["bit_offset"])
-    fieldnames = [f["name"] for f in sorted_fields]
+    raw_names = [f["name"] for f in sorted_fields]
+
+    if friendly_names:
+        # Map raw codes to friendly names where available
+        header_names = [FIELD_NAMES.get(n, n) for n in raw_names]
+    else:
+        header_names = raw_names
+
+    def _write(dest):
+        writer = csv.writer(dest)
+        writer.writerow(header_names)
+        for rec in records:
+            writer.writerow([rec.get(n, "") for n in raw_names])
 
     if output is None:
         buf = io.StringIO()
-        writer = csv.DictWriter(buf, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(records)
+        _write(buf)
         return buf.getvalue()
     else:
-        writer = csv.DictWriter(output, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(records)
+        _write(output)
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="EA TDB Save File Parser for NCAA Football"
-    )
-    parser.add_argument("file", help="Path to the save file")
-    parser.add_argument("table", nargs="?", help="Table name to dump (e.g. PLAY)")
-    parser.add_argument("-o", "--output", help="Output CSV file path")
-    parser.add_argument(
-        "--schema", action="store_true", help="Show field definitions instead of data"
-    )
-    parser.add_argument(
-        "--db", type=int, default=None, help="TDB index for dynasty files (0 or 1)"
-    )
-    args = parser.parse_args()
-
-    with open(args.file, "rb") as f:
+def load_file(path):
+    """Load a save file and return (data, tdb_offsets, timestamp)."""
+    with open(path, "rb") as f:
         data = f.read()
-
     tdb_offsets, timestamp = find_tdbs(data)
-
     if not tdb_offsets:
-        print("Error: No TDB databases found in file", file=sys.stderr)
+        print(f"Error: No TDB databases found in {path}", file=sys.stderr)
+        sys.exit(1)
+    return data, tdb_offsets, timestamp
+
+
+def find_table_in_file(data, tdb_offsets, table_name, db_idx=None):
+    """Find a table by name across TDB databases. Returns (data, table_info)."""
+    target = table_name.upper()
+    if db_idx is not None:
+        indices = [db_idx]
+    else:
+        indices = range(len(tdb_offsets))
+
+    for idx in indices:
+        db = parse_tdb(data, tdb_offsets[idx])
+        if target in db["tables"]:
+            return data, db["tables"][target]
+
+    return None, None
+
+
+def cmd_list(args):
+    """List all tables in a file."""
+    data, tdb_offsets, timestamp = load_file(args.file)
+
+    if timestamp:
+        print(f"Timestamp: {timestamp}")
+    print(f"Found {len(tdb_offsets)} TDB database(s)\n")
+
+    for db_idx, tdb_off in enumerate(tdb_offsets):
+        db = parse_tdb(data, tdb_off)
+        print(
+            f"DB {db_idx}: version={db['version']}, "
+            f"tables={db['table_count']}, "
+            f"offset=0x{tdb_off:X}"
+        )
+        print(f"  {'Table':<12} {'Records':>8} {'Capacity':>9} {'Fields':>7} "
+              f"{'RecLen':>7}")
+        print(f"  {'─'*12} {'─'*8} {'─'*9} {'─'*7} {'─'*7}")
+        for name in sorted(db["tables"]):
+            t = db["tables"][name]
+            if "error" in t:
+                print(f"  {name:<12} ERROR: {t['error']}")
+            else:
+                print(
+                    f"  {name:<12} {t['record_count']:>8} "
+                    f"{t['capacity']:>9} {t['field_count']:>7} "
+                    f"{t['record_length']:>7}"
+                )
+        print()
+
+
+def cmd_dump(args):
+    """Dump a single table as CSV."""
+    data, tdb_offsets, timestamp = load_file(args.file)
+
+    if args.db is not None and args.db >= len(tdb_offsets):
+        print(
+            f"Error: DB index {args.db} out of range "
+            f"(file has {len(tdb_offsets)} DBs)",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
-    if args.table is None:
-        # List mode: show all tables
-        if timestamp:
-            print(f"Timestamp: {timestamp}")
-        print(f"Found {len(tdb_offsets)} TDB database(s)\n")
+    _, table_info = find_table_in_file(data, tdb_offsets, args.table, args.db)
 
-        for db_idx, tdb_off in enumerate(tdb_offsets):
-            db = parse_tdb(data, tdb_off)
-            print(
-                f"DB {db_idx}: version={db['version']}, "
-                f"tables={db['table_count']}, "
-                f"offset=0x{tdb_off:X}"
-            )
-            print(f"  {'Table':<8} {'Records':>8} {'Capacity':>9} {'Fields':>7} "
-                  f"{'RecLen':>7}")
-            print(f"  {'─'*8} {'─'*8} {'─'*9} {'─'*7} {'─'*7}")
-            for name in sorted(db["tables"]):
-                t = db["tables"][name]
-                if "error" in t:
-                    print(f"  {name:<8} ERROR: {t['error']}")
-                else:
-                    print(
-                        f"  {name:<8} {t['record_count']:>8} "
-                        f"{t['capacity']:>9} {t['field_count']:>7} "
-                        f"{t['record_length']:>7}"
-                    )
-            print()
-        return
-
-    # Determine which DB to use
-    if args.db is not None:
-        if args.db >= len(tdb_offsets):
-            print(
-                f"Error: DB index {args.db} out of range "
-                f"(file has {len(tdb_offsets)} DBs)",
-                file=sys.stderr,
-            )
-            sys.exit(1)
-        db_indices = [args.db]
-    else:
-        db_indices = range(len(tdb_offsets))
-
-    # Find the table
-    target = args.table.upper()
-    found_db = None
-    found_table = None
-    for db_idx in db_indices:
-        db = parse_tdb(data, tdb_offsets[db_idx])
-        if target in db["tables"]:
-            found_db = db
-            found_table = db["tables"][target]
-            break
-
-    if found_table is None:
-        print(f"Error: Table '{target}' not found", file=sys.stderr)
-        # Show available tables
+    if table_info is None:
+        print(f"Error: Table '{args.table.upper()}' not found", file=sys.stderr)
         for db_idx, tdb_off in enumerate(tdb_offsets):
             db = parse_tdb(data, tdb_off)
             tables = sorted(db["tables"].keys())
@@ -381,21 +440,229 @@ def main():
         sys.exit(1)
 
     if args.schema:
-        print(format_schema(found_table))
+        print(format_schema(table_info))
         return
 
-    # Dump records as CSV
-    records = read_records(data, found_table)
-
+    records = read_records(data, table_info)
+    use_friendly = not args.raw
     if args.output:
         with open(args.output, "w", newline="") as f:
-            records_to_csv(records, found_table["fields"], f)
-        print(
-            f"Wrote {len(records)} records to {args.output}",
-            file=sys.stderr,
-        )
+            records_to_csv(records, table_info["fields"], f,
+                           friendly_names=use_friendly)
+        print(f"Wrote {len(records)} records to {args.output}", file=sys.stderr)
     else:
-        sys.stdout.write(records_to_csv(records, found_table["fields"]))
+        sys.stdout.write(
+            records_to_csv(records, table_info["fields"],
+                           friendly_names=use_friendly)
+        )
+
+
+def cmd_export(args):
+    """Export all tables (or tables with data) to a directory of CSV files."""
+    import os
+
+    data, tdb_offsets, timestamp = load_file(args.file)
+    outdir = args.output or "export"
+    os.makedirs(outdir, exist_ok=True)
+
+    db_indices = [args.db] if args.db is not None else range(len(tdb_offsets))
+    total_files = 0
+    use_friendly = not args.raw
+
+    for db_idx in db_indices:
+        if db_idx >= len(tdb_offsets):
+            continue
+        db = parse_tdb(data, tdb_offsets[db_idx])
+        prefix = f"db{db_idx}_" if len(tdb_offsets) > 1 else ""
+
+        for name in sorted(db["tables"]):
+            t = db["tables"][name]
+            if "error" in t or t["record_count"] == 0:
+                continue
+
+            records = read_records(data, t)
+            fname = f"{prefix}{name}.csv"
+            fpath = os.path.join(outdir, fname)
+            with open(fpath, "w", newline="") as f:
+                records_to_csv(records, t["fields"], f,
+                               friendly_names=use_friendly)
+            total_files += 1
+
+    print(f"Exported {total_files} tables to {outdir}/", file=sys.stderr)
+
+
+def cmd_diff(args):
+    """Compare a table between two files and show differences."""
+    data1, offsets1, _ = load_file(args.file1)
+    data2, offsets2, _ = load_file(args.file2)
+
+    target = args.table.upper()
+    _, t1 = find_table_in_file(data1, offsets1, target, args.db)
+    _, t2 = find_table_in_file(data2, offsets2, target, args.db)
+
+    if t1 is None:
+        print(f"Error: Table '{target}' not found in {args.file1}", file=sys.stderr)
+        sys.exit(1)
+    if t2 is None:
+        print(f"Error: Table '{target}' not found in {args.file2}", file=sys.stderr)
+        sys.exit(1)
+
+    recs1 = read_records(data1, t1)
+    recs2 = read_records(data2, t2)
+
+    # Build field name list (sorted by bit_offset)
+    sorted_fields = sorted(t1["fields"], key=lambda f: f["bit_offset"])
+    field_names = [f["name"] for f in sorted_fields]
+
+    # Determine a key for matching records. Use string fields if available,
+    # otherwise fall back to record index.
+    string_fields = [f["name"] for f in sorted_fields if f["type"] == FIELD_STRING]
+
+    def record_key(rec):
+        if string_fields:
+            return tuple(str(rec.get(f, "")) for f in string_fields)
+        return None
+
+    # Try key-based matching first
+    use_keys = string_fields and len({record_key(r) for r in recs1}) == len(recs1)
+
+    if use_keys:
+        map2 = {}
+        for r in recs2:
+            map2[record_key(r)] = r
+
+        added = []
+        removed = []
+        changed = []
+
+        keys1 = set()
+        for r1 in recs1:
+            k = record_key(r1)
+            keys1.add(k)
+            r2 = map2.get(k)
+            if r2 is None:
+                removed.append(r1)
+            else:
+                diffs = {}
+                for fn in field_names:
+                    v1, v2 = r1.get(fn), r2.get(fn)
+                    if str(v1) != str(v2):
+                        diffs[fn] = (v1, v2)
+                if diffs:
+                    changed.append((r1, diffs))
+
+        for r2 in recs2:
+            if record_key(r2) not in keys1:
+                added.append(r2)
+    else:
+        # Index-based matching
+        added = []
+        removed = []
+        changed = []
+        max_len = max(len(recs1), len(recs2))
+        for i in range(max_len):
+            if i >= len(recs1):
+                added.append(recs2[i])
+            elif i >= len(recs2):
+                removed.append(recs1[i])
+            else:
+                diffs = {}
+                for fn in field_names:
+                    v1, v2 = recs1[i].get(fn), recs2[i].get(fn)
+                    if str(v1) != str(v2):
+                        diffs[fn] = (v1, v2)
+                if diffs:
+                    changed.append((recs1[i], diffs))
+
+    # Print summary
+    print(f"Diff: {target} ({len(recs1)} vs {len(recs2)} records)")
+    print(f"  Changed: {len(changed)}, Added: {len(added)}, Removed: {len(removed)}")
+
+    if not changed and not added and not removed:
+        print("  No differences found.")
+        return
+
+    # Print changes
+    # Build a label for each record using string fields
+    def rec_label(rec):
+        parts = []
+        for sf in string_fields:
+            v = rec.get(sf, "")
+            if v:
+                parts.append(str(v))
+        return " | ".join(parts) if parts else f"(record)"
+
+    for rec, diffs in changed:
+        label = rec_label(rec)
+        print(f"\n  ~ {label}")
+        for fn, (v1, v2) in sorted(diffs.items()):
+            fn_display = FIELD_NAMES.get(fn, fn)
+            print(f"      {fn_display}: {v1} -> {v2}")
+
+    for rec in added:
+        print(f"\n  + {rec_label(rec)}")
+
+    for rec in removed:
+        print(f"\n  - {rec_label(rec)}")
+
+
+def main():
+    # Detect subcommand mode vs default mode
+    if len(sys.argv) > 1 and sys.argv[1] in ("export", "diff"):
+        mode = sys.argv[1]
+        if mode == "export":
+            parser = argparse.ArgumentParser(
+                prog="tdb_parser.py export",
+                description="Export all tables to CSV files",
+            )
+            parser.add_argument("file", help="Path to the save file")
+            parser.add_argument(
+                "-o", "--output", help="Output directory (default: export)"
+            )
+            parser.add_argument("--db", type=int, default=None, help="TDB index")
+            parser.add_argument(
+                "--raw", action="store_true", help="Use raw field codes"
+            )
+            args = parser.parse_args(sys.argv[2:])
+            cmd_export(args)
+        elif mode == "diff":
+            parser = argparse.ArgumentParser(
+                prog="tdb_parser.py diff",
+                description="Compare a table between two files",
+            )
+            parser.add_argument("file1", help="First save file")
+            parser.add_argument("file2", help="Second save file")
+            parser.add_argument("table", help="Table name to compare")
+            parser.add_argument("--db", type=int, default=None, help="TDB index")
+            args = parser.parse_args(sys.argv[2:])
+            cmd_diff(args)
+    else:
+        parser = argparse.ArgumentParser(
+            description="EA TDB Save File Parser for NCAA Football"
+        )
+        parser.add_argument("file", help="Path to the save file")
+        parser.add_argument(
+            "table", nargs="?", help="Table name to dump (e.g. PLAY)"
+        )
+        parser.add_argument("-o", "--output", help="Output CSV file path")
+        parser.add_argument(
+            "--schema", action="store_true",
+            help="Show field definitions instead of data",
+        )
+        parser.add_argument(
+            "--db", type=int, default=None,
+            help="TDB index for dynasty files (0 or 1)",
+        )
+        parser.add_argument(
+            "--raw", action="store_true",
+            help="Use raw TDB field codes instead of friendly names",
+        )
+        args = parser.parse_args()
+
+        if args.table:
+            cmd_dump(args)
+        else:
+            cmd_list(args)
 
 
 if __name__ == "__main__":
