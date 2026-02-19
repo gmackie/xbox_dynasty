@@ -12,12 +12,15 @@ Usage:
     python tdb_parser.py <file> <TABLE> --schema         Show field definitions
     python tdb_parser.py <file> <TABLE> --raw            Use raw field codes
     python tdb_parser.py export <file> -o dir/           Export all tables
+    python tdb_parser.py sqlite <file> [-o out.db]       Export to SQLite
     python tdb_parser.py diff <file1> <file2> <TABLE>    Compare tables
 """
 
 import argparse
 import csv
 import io
+import os
+import sqlite3
 import struct
 import sys
 
@@ -614,8 +617,6 @@ def cmd_dump(args):
 
 def cmd_export(args):
     """Export all tables (or tables with data) to a directory of CSV files."""
-    import os
-
     data, tdb_offsets, timestamp = load_file(args.file)
     outdir = args.output or "export"
     os.makedirs(outdir, exist_ok=True)
@@ -644,6 +645,80 @@ def cmd_export(args):
             total_files += 1
 
     print(f"Exported {total_files} tables to {outdir}/", file=sys.stderr)
+
+
+def cmd_sqlite(args):
+    """Export all tables to a single SQLite database file."""
+    data, tdb_offsets, timestamp = load_file(args.file)
+    outpath = args.output or os.path.splitext(os.path.basename(args.file))[0] + ".db"
+
+    # Remove existing file to avoid stale data
+    if os.path.exists(outpath):
+        os.remove(outpath)
+
+    conn = sqlite3.connect(outpath)
+    db_indices = [args.db] if args.db is not None else range(len(tdb_offsets))
+    use_friendly = not args.raw
+    total_tables = 0
+
+    # Map TDB field types to SQLite type affinities
+    sqlite_types = {
+        FIELD_STRING: "TEXT",
+        FIELD_BINARY: "TEXT",
+        FIELD_SINT: "INTEGER",
+        FIELD_UINT: "INTEGER",
+        FIELD_FLOAT: "REAL",
+    }
+
+    for db_idx in db_indices:
+        if db_idx >= len(tdb_offsets):
+            continue
+        db = parse_tdb(data, tdb_offsets[db_idx])
+        prefix = f"db{db_idx}_" if len(tdb_offsets) > 1 else ""
+
+        for name in sorted(db["tables"]):
+            t = db["tables"][name]
+            if "error" in t or t["record_count"] == 0:
+                continue
+
+            records = read_records(data, t)
+            sorted_fields = sorted(t["fields"], key=lambda f: f["bit_offset"])
+            raw_names = [f["name"] for f in sorted_fields]
+
+            if use_friendly:
+                name_map = TABLE_FIELD_NAMES.get(name, FIELD_NAMES)
+                col_names = [name_map.get(n, n) for n in raw_names]
+            else:
+                col_names = list(raw_names)
+
+            # Deduplicate column names (SQLite identifiers are case-insensitive,
+            # so e.g. "tpst" and "tPst" collide)
+            seen = {}
+            for i, c in enumerate(col_names):
+                key = c.lower()
+                if key in seen:
+                    seen[key] += 1
+                    col_names[i] = f"{c}_{seen[key]}"
+                else:
+                    seen[key] = 0
+
+            col_defs = ", ".join(
+                f'"{c}" {sqlite_types.get(sf["type"], "TEXT")}'
+                for c, sf in zip(col_names, sorted_fields)
+            )
+            table_name = f"{prefix}{name}"
+            conn.execute(f'CREATE TABLE "{table_name}" ({col_defs})')
+
+            placeholders = ", ".join("?" for _ in col_names)
+            conn.executemany(
+                f'INSERT INTO "{table_name}" VALUES ({placeholders})',
+                [[rec.get(n, "") for n in raw_names] for rec in records],
+            )
+            total_tables += 1
+
+    conn.commit()
+    conn.close()
+    print(f"Exported {total_tables} tables to {outpath}", file=sys.stderr)
 
 
 def cmd_diff(args):
@@ -764,7 +839,7 @@ def cmd_diff(args):
 
 def main():
     # Detect subcommand mode vs default mode
-    if len(sys.argv) > 1 and sys.argv[1] in ("export", "diff"):
+    if len(sys.argv) > 1 and sys.argv[1] in ("export", "sqlite", "diff"):
         mode = sys.argv[1]
         if mode == "export":
             parser = argparse.ArgumentParser(
@@ -781,6 +856,21 @@ def main():
             )
             args = parser.parse_args(sys.argv[2:])
             cmd_export(args)
+        elif mode == "sqlite":
+            parser = argparse.ArgumentParser(
+                prog="tdb_parser.py sqlite",
+                description="Export all tables to a SQLite database",
+            )
+            parser.add_argument("file", help="Path to the save file")
+            parser.add_argument(
+                "-o", "--output", help="Output .db file (default: <input>.db)"
+            )
+            parser.add_argument("--db", type=int, default=None, help="TDB index")
+            parser.add_argument(
+                "--raw", action="store_true", help="Use raw field codes"
+            )
+            args = parser.parse_args(sys.argv[2:])
+            cmd_sqlite(args)
         elif mode == "diff":
             parser = argparse.ArgumentParser(
                 prog="tdb_parser.py diff",
